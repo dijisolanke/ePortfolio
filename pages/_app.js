@@ -4,24 +4,20 @@ import '../styles/footer.css'
 import '../styles/profileImg.css'
 import '../styles/bundle.css'
 import SiteLayout from '../components/siteLayout'
+import { StyledEngineProvider } from '@mui/material/styles';
+
 
 import Head from 'next/head'
 
 
  function MyApp({ Component, pageProps }) {
   return <>
-  <SiteLayout>
-      <Head>
-      <link rel="stylesheet" href="https://video-react.github.io/assets/video-react.css"/>
+  <StyledEngineProvider injectFirst>
+    <SiteLayout>
 
-      <link rel="stylesheet" href="../styles/header.css"/>
-      <link rel="stylesheet" href="../styles/footer.css"/>
-      <link rel="stylesheet" href="../styles/profileImg.css"/>
-
-      </Head>
-
-    <Component {...pageProps} />
-  </SiteLayout>
+      <Component {...pageProps} />
+    </SiteLayout>
+    </StyledEngineProvider>
   </>
   
 }

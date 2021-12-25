@@ -40,19 +40,6 @@ export default function SiteFooter(){
             <use id="wave1" className="wave" href="#wave" x="0" y="1"></use>
 
     </g></g></svg>
-
-
-    
-	<div id="pwaforwp_loading_div"></div><div className="pwaforwp-loading-wrapper" ><div id="pwaforwp_loading_icon"></div></div><script type="text/javascript" src="https://lzomedia.com/app/themes/dark-portfolio/js/app.js?ver=20200801" id="dark_portfolio_javascript-js"></script>
-<script type="text/javascript" src="https://lzomedia.com/wp/wp-includes/js/comment-reply.min.js?ver=5.8.2" id="comment-reply-js"></script>
-<script type="text/javascript" id="pwaforwp-js-js-extra">
- 
- 
-</script>
-<script type="text/javascript" src="https://lzomedia.com/app/plugins/pwa-for-wp/assets/js/pwaforwp.min.js?ver=1.7.27" id="pwaforwp-js-js"></script>
-<script type="text/javascript" src="https://lzomedia.com/?pwa_for_wp_script=1&amp;sw=pwa-register-sw-js&amp;ver=1.7.27" id="pwa-main-script-js"></script>
-<script type="text/javascript" src="https://lzomedia.com/wp/wp-includes/js/wp-embed.min.js?ver=5.8.2" id="wp-embed-js"></script>
-<script async="async" type="text/javascript" src="https://lzomedia.com/app/plugins/akismet/_inc/form.js?ver=4.1.7" id="akismet-form-js"></script>
     
 </footer>
 

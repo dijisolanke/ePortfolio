@@ -47,3 +47,12 @@
       transform: translateY(0);
     }
   }
+
+  @media only screen and (max-width:600px){
+    .nav-items{
+        margin: 1% auto;
+    }
+    .header-nav{
+        flex-direction: column;
+    }
+}
