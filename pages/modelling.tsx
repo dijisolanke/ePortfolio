@@ -15,6 +15,7 @@ interface Asset {
   id: string
   alt: string
   filename: string
+  currentImage: string
 }
 
 export default function Posts({ContentNode}) {
@@ -28,13 +29,13 @@ export default function Posts({ContentNode}) {
     //This is because I didn't want the first and last Items and incidentally, they didn't
     //have Id numbers. 
     const assets= Object.values(content).filter(({id}) => id != null);
+
+    const current= Object.values(content).filter(({alt}) => alt == 'Current Look');
+    var currentLook = current[0].filename;
+    const currentId = current[0].id;
  
 
     const urls = assets.map(({ filename }) => filename);
-    console.log(urls)
-
-    
-    console.log( "Modelling COoOoOoOoONTentttttttttttttttt",assets);
     return (
      
       <>
@@ -42,7 +43,7 @@ export default function Posts({ContentNode}) {
 
         <div style={wrapper.all}>
 
-          <ModelCard/>
+          <ModelCard currentLook={currentLook}/>
 
             <Box className='model-box' style={styles.gridWrap} sx={{ 
               width: {lg: 1200, xl: 1500}, 

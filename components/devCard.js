@@ -1,43 +1,126 @@
 import React from "react";
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
-
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import zIndex from "@mui/material/styles/zIndex";
 
 export default function DevCard (){
-    return(
 
-    <Card style={styles.gridWrap} sx={{ maxWidth: 545 }}>
-      <CardMedia
-        component="img"
-        height="400"
-        src="./images/lightbulb.gif"
-        alt="gif of guy tapping his head"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          My Tech Stack
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+  const [expanded, setExpanded] = React.useState(false);
+      
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+    return(
+        <div style={position} >
+          <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <Typography sx={{ width: '33%', flexShrink: 0 }}>
+                This Site
+              </Typography>
+              <Typography sx={{ color: 'text.secondary' }}>React based project</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                I first began building the skeleton (the Header and Footer) for this site using vanilla HTML and CSS. <br/>
+                For the Css I used Gulp Sass in order to make my stylings cross browser compatible. <br/>
+                <br/>
+                For the main sections (Modelling, Music pages), there are a few different things at play. <br/>
+                I stored all my media Assets on StoryBlok, a headless Content Management System. <br/>
+                I did this because it would allow me to update content without having to re-deploy my site or change the code.<br/>
+                I then used Apollo Client to make asynchronous requests and cache the data to improve the speed and functionality of the site. <br/><br/>
+
+                I learned this from my first mentor at Zaltek Digital(Software company where I got my start). <br/>
+                His impact on my journey as a developer is greater than I can put into words.<br/><br/>
+                Finally, using Vercel I was able to deploy this project. <br/>
+                All in all, the project took me two and a half weeks from start to completion.
+
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2bh-content"
+              id="panel2bh-header"
+            >
+              <Typography sx={{ width: '33%', flexShrink: 0 }}>Proof of Concept</Typography>
+              <Typography sx={{ color: 'text.secondary' }}>
+              <a href="https://tester-axca15jry-dijisolanke.vercel.app/posts" target="_blank"> Click here to view site</a>
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                This project is where I acquired many of the tools I used to build the site you're looking at. <br/>
+                Here I was introduced to React and Nextjs along with the concept of building projects using reusable/scaleable components. <br/> <br/>
+                I was also introduced to two headless CMS' Strapi and Storyblok and shown how to interact with data via Api's. I also learned some of Javascripts core features
+                like the map and sort functions. <br/>
+                Although it doesn't look like much, this is where my real learning began. <br/><br/>
+
+                The posts (images and blog text) were all stored first using Strapi(CMS) and then Storyblok(also CMS) <br/>
+                I learned about Sass and how to create Gulp-tasks in order to compile css as well as automate an array of tasks <br/>
+                I also learned how to deploy a project using Vercel.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel3bh-content"
+              id="panel3bh-header"
+            >
+              <Typography sx={{ width: '33%', flexShrink: 0 }}>
+                Glass Artist Site
+              </Typography>
+              <Typography sx={{ color: 'text.secondary' }}>
+              <a href="https://sachadelabre.com/" target="_blank"> Click here to view site</a>
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                This was my very first site. It was for a paying client. It was also my first paying gig as a dev. <br/>
+                I made it using vanilla javascript, bespoke HTML and CSS. <br/>
+                I learned how to save information while users browsed different pages of the site using local storage and <br/>
+                it was through building this site that I was able to understand the concept of Object oriented Programming. <br/> <br/>
+
+                My client wanted to be able to receive order requests via email so I used PHP to process form reqiests. <br/>
+                I found this quite tough but through building this project I learned to become a better problem solver. <br/><br/>
+                
+                The whole project took me seven months to complete <br/>
+                and resulted in me getting an internship at a tech start-up company called Zaltek Digital.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion sx={{mb: 50}} expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel4bh-content"
+              id="panel4bh-header"
+            >
+              <Typography sx={{ width: '33%', flexShrink: 0 }}>Github</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+              <a href="https://github.com/dijisolanke" target="_blank"> Click here</a>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </div>
+      
+  
 
     )
 }
 
-const styles = {
-    gridWrap: {
-      position: 'relative',
-      margin: '100px auto', 
-    }
-  }
+const position = {
+  position: "relative",
+  top: 20,
+  margin: "auto 10%",
+  zIndex: 10
+}

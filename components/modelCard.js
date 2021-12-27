@@ -3,7 +3,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
-export default function ModelCard(){
+export default function ModelCard({currentLook}){
+
    return(
         <Card className="header-margin" style={styles.gridWrap} sx={{ maxWidth: 345 }}>
         <CardMedia
@@ -11,14 +12,15 @@ export default function ModelCard(){
           alt="HeadShot of a smiling Man"
           height="290"
           width="50"
-          src="./images/plain.jpeg"
+          src={`${currentLook}?w=248&fit=crop&auto=format`}
         />
         <CardContent>
           <Typography gutterBottom align="center" variant="overline" component="div">
             -Current Look-
           </Typography>
           <Typography gutterBottom variant="overline" component="div">
-            EMAIL: diji.solanke@yahoo.com
+            Email: diji.solanke@yahoo.com <br/>
+            Instagram: @dijisolanke
           </Typography>
           <Typography variant="body2" color="text.secondary" >
           <b>Height:</b> 5'11 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;

@@ -12,9 +12,11 @@ export default function Dev(){
                    <h1><em>My Tech Stack</em></h1>
                 </Typography>
                 <TechStack/>
-                <Typography variant="inherit" align="center">
-                   <h1><em>What I've Built</em></h1>
+
+                <Typography variant="subtitle1" align="center" sx={{my: 10}}>
+                ⬇Projects⬇
                 </Typography>
+                
                 <DevCard/>
             </div>
         </>

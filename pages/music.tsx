@@ -9,17 +9,13 @@ import Grid from '@mui/material/Grid';
 
 
 
-export default function Music({ContentNode}) {
+export default function Music({ ContentNode }) {
     
   const content  = ContentNode.content
 
   const vidUrls = Object.values(content).filter(({ id })=> id != null)
 
-  
-  console.log('Music vidZZZZZZZZZ',vidUrls);
-
-  
-    
+      
     return(
       <div style={styles.wrap}>
         <Box sx={{ flexGrow:1 }}>
