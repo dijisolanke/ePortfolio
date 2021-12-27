@@ -44,10 +44,16 @@ export default function Posts({ContentNode}) {
 
           <ModelCard/>
 
-            <Box style={styles.gridWrap} sx={{ width: 1500, height: 950, overflowY: 'scroll', flexGrow:1 }}>
-                  <ImageList variant="masonry" cols={3} gap={22}>
+            <Box className='model-box' style={styles.gridWrap} sx={{ 
+              width: {lg: 1200, xl: 1500}, 
+              height: 950,
+              overflowX:'scroll',
+              overflowY: 'scroll',
+              flexGrow:1 
+              }} >
+                  <ImageList variant="masonry" cols={3} gap={22} >
                     {assets.map(({id, filename, alt}: Asset) => (
-                      <Grid >  
+                      <Grid>  
                         <ImageListItem key={id}>
                           <img
                             src={`${filename}?w=248&fit=crop&auto=format`}
