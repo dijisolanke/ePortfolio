@@ -15,7 +15,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": false,
+    "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true
   },
@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/modelCard.js"  ],
+  ],
   "exclude": [
     "node_modules"
   ]
