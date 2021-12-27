@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MY FIRST WEBSITE
+<h4>Link to Website:</h4>  http://sachadelabre.com
 
-## Getting Started
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<h1>Synopsis</h1>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h5>
+This is my most recent Site. 
+I built it using React and it took me two and a half weeks.
+</h5>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+![](gitPics/image1.png)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<h1>
+Softare stack:
+</h1>
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+- HTML
+- CSS
+- REACT
+- TYPESCRIPT
+- SASS
+- STORYBLOK(headless Content Management System)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![](gitPics/image2.png)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<h1>More About</h1>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h4>
+This website is a personal Portfolio .
+I made it in order to showcase my skill and track my development as a Dev.
+</h4>
+
+
+![](gitPics/image3.png)
+
+
+
+<h1>Experience gained</h1>
+
+- In making this I gained a deeper understanding of React and its true power.
+
+- I learned how to use styling libraries. The main one I used was Material UI
+
+- I got to practice working with asynchronous get requests
+
+- I got to practice using Javascript core features such as mapping and sorting
+
+- I also got to learn how to deploy a project on Vercel
+
+
+
+
+![](gitPics/image4.png)
