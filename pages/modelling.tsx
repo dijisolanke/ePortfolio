@@ -10,7 +10,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 
-interface Asset {
+class Asset {
   id: string;
   alt: string;
   filename: string;
