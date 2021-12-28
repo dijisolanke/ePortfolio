@@ -45,7 +45,7 @@ export default function DevCard() {
           <Typography sx={{ width: '42%', flexShrink: 0 }}>Proof of Concept</Typography>
           <Typography sx={{ color: 'text.secondary' }}>
             <u>
-              <a href="https://tester-axca15jry-dijisolanke.vercel.app/posts" target="_blank">
+              <a href="https://tester-axca15jry-dijisolanke.vercel.app/posts" target="_blank" rel="noreferrer">
                 {' '}
                 Click here to view site
               </a>
@@ -77,7 +77,7 @@ export default function DevCard() {
           <Typography sx={{ width: '42%', flexShrink: 0 }}>Glass Artist Site</Typography>
           <Typography sx={{ color: 'text.secondary' }}>
             <u>
-              <a href="https://sachadelabre.com/" target="_blank">
+              <a href="https://sachadelabre.com/" target="_blank" rel="noreferrer">
                 {' '}
                 Click here to view site
               </a>
@@ -87,15 +87,13 @@ export default function DevCard() {
         <AccordionDetails>
           <Typography>
             This was my very first site. It was for a paying client. It was also my first paying gig as a dev. <br />
-            I made it using vanilla javascript, bespoke HTML and CSS. <br />
-            I learned how to save information while users browsed different pages of the site using local storage and{' '}
-            <br />
+            I made it using vanilla javascript, bespoke HTML and CSS. <br />I learned how to save information while
+            users browsed different pages of the site using local storage and <br />
             it was through building this site that I was able to understand the concept of Object oriented Programming.{' '}
             <br /> <br />
             My client wanted to be able to receive order requests via email so I used PHP to process form requests.{' '}
-            <br />
-            I found this quite tough but through building this project I learned to become a better problem solver.{' '}
-            <br />
+            <br />I found this quite tough but through building this project I learned to become a better problem
+            solver. <br />
             <br />
             The whole project took me seven months to complete <br />
             and resulted in me getting an internship at a tech start-up company called Zaltek Digital.
@@ -110,16 +108,15 @@ export default function DevCard() {
           <Typography>
             To view my Github &nbsp;&nbsp;
             <u>
-              <a href="https://github.com/dijisolanke" target="_blank">
+              <a href="https://github.com/dijisolanke" target="_blank" rel="noreferrer">
                 {' '}
                 Click here
               </a>
             </u>{' '}
             <br />
             <br />
-            <h4>More</h4>
-            I worked on a government Project just before Christmas, the content of which have to remain classified.{' '}
-            <br />
+            <h4>More</h4>I worked on a government Project just before Christmas, the content of which have to remain
+            classified. <br />
             On that Project I was working with Drupal 9. Throughout that project, I learned a lot about Drupal and It's
             templating engine. <br />
             I learned how to use Twig. A templating mark-up language. <br />
@@ -137,7 +134,7 @@ export default function DevCard() {
             minor adjustments <br />
             To a live website called{' '}
             <u>
-              <a href="https://www.websand.co.uk/consent-signup-page/" target="_blank">
+              <a href="https://www.websand.co.uk/consent-signup-page/" target="_blank" rel="noreferrer">
                 {' '}
                 Websands
               </a>

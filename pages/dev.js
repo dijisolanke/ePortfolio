@@ -2,6 +2,7 @@ import React from 'react';
 import TechStack from '../components/techLogos';
 import Typography from '@mui/material/Typography';
 import DevCard from '../components/devCard';
+import DevPic from '../components/devPic';
 
 export default function Dev() {
   return (
@@ -19,6 +20,7 @@ export default function Dev() {
         </Typography>
 
         <DevCard />
+        <DevPic />
       </div>
     </>
   );
