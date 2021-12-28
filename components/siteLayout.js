@@ -1,20 +1,20 @@
-import react from "react";
+import react from 'react';
 
-import SiteFooter from './siteFooter'
-import SiteHeader from './siteHeader'
+import SiteFooter from './siteFooter';
+import SiteHeader from './siteHeader';
 
-//This just returns the header and footer div's which 
+//This just returns the header and footer div's which
 //wrap around all the content
-const SiteLayout = ({children}) => {
-    return (
-        <>
-            <SiteHeader />
+const SiteLayout = ({ children }) => {
+  return (
+    <>
+      <SiteHeader />
 
-                {children}
+      {children}
 
-            <SiteFooter />
-        </>
-    )
-}
+      <SiteFooter />
+    </>
+  );
+};
 
-export default SiteLayout
+export default SiteLayout;

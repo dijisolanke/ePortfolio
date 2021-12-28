@@ -6,20 +6,16 @@ import '../styles/bundle.css';
 import SiteLayout from '../components/siteLayout';
 import { StyledEngineProvider } from '@mui/material/styles';
 
-
-
-
-
- function MyApp({ Component, pageProps }) {
-  return <>
-  <StyledEngineProvider injectFirst>
-    <SiteLayout>
-
-      <Component {...pageProps} />
-    </SiteLayout>
-    </StyledEngineProvider>
-  </>
-  
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <StyledEngineProvider injectFirst>
+        <SiteLayout>
+          <Component {...pageProps} />
+        </SiteLayout>
+      </StyledEngineProvider>
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
