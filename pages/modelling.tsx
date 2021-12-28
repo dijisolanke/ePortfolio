@@ -15,24 +15,24 @@ interface Asset {
   id: string
   alt: string
   filename: string
-  currentImage: string
 }
+
 
 export default function Posts({ContentNode}) {
   
 
-     const { content } = ContentNode;
+     const { content} = ContentNode
 
     //to get the properties from my object I destructiured the ContentNode object 
     //to get the content which I then put into an array with the filter method
     //by selecting only the items with an id number greater than Zero. 
     //This is because I didn't want the first and last Items and incidentally, they didn't
     //have Id numbers. 
-    const assets= Object.values(content).filter(({id}) => id != null);
+    const assets: Asset[]  = Object.values(content).filter(({id}) => id != null) as Asset[];
 
-    const current= Object.values(content).filter(({alt}) => alt == 'Current Look');
-    var currentLook = current[0].filename;
-    const currentId = current[0].id;
+    const current= assets.find(({alt}) => alt == 'Current Look');
+    var currentLook = current.filename
+
  
 
     const urls = assets.map(({ filename }) => filename);
