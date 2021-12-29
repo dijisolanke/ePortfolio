@@ -1,7 +1,6 @@
-# MY FIRST WEBSITE
-<h4>Link to Website:</h4>  http://sachadelabre.com
+# MY WEB PORTFOLIO
 
-
+<h4>Link to Website:</h4>  https://diji-portfolio-bonohfc52-dijisolanke.vercel.app/dev
 
 <h1>Synopsis</h1>
 
@@ -10,13 +9,11 @@ This is my most recent Site.
 I built it using React and it took me two and a half weeks.
 </h5>
 
-
 ![](gitPics/image1.png)
 
 <h1>
 Softare stack:
 </h1>
-
 
 - HTML
 - CSS
@@ -25,9 +22,7 @@ Softare stack:
 - SASS
 - STORYBLOK(headless Content Management System)
 
-
 ![](gitPics/image2.png)
-
 
 <h1>More About</h1>
 
@@ -36,10 +31,7 @@ This website is a personal Portfolio .
 I made it in order to showcase my skill and track my development as a Dev.
 </h4>
 
-
 ![](gitPics/image3.png)
-
-
 
 <h1>Experience gained</h1>
 
@@ -52,8 +44,5 @@ I made it in order to showcase my skill and track my development as a Dev.
 - I got to practice using Javascript core features such as mapping and sorting
 
 - I also got to learn how to deploy a project on Vercel
-
-
-
 
 ![](gitPics/image4.png)

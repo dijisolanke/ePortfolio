@@ -17,7 +17,14 @@ export default function Music({ ContentNode }) {
         <Grid container spacing={1}>
           {vidUrls.map(({ filename, id }) => (
             <Grid item xs={12} md={6}>
-              <ReactPlayer key={id} className="react-player" url={filename} width="90%" height="90%" controls={true} />
+              <ReactPlayer
+                key={id}
+                className="react-player"
+                url={filename}
+                width="100%"
+                height="100%"
+                controls={true}
+              />
             </Grid>
           ))}
         </Grid>
