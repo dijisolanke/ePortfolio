@@ -45,7 +45,7 @@ export default function DevCard() {
           <Typography sx={{ width: '42%', flexShrink: 0 }}>Proof of Concept</Typography>
           <Typography sx={{ color: 'text.secondary' }}>
             <u>
-              <a href="https://tester-axca15jry-dijisolanke.vercel.app/posts" target="_blank" rel="noreferrer">
+              <a href="https://tester-1liiu8xon-dijisolanke.vercel.app/posts" target="_blank" rel="noreferrer">
                 {' '}
                 Click here to view site
               </a>
@@ -113,6 +113,8 @@ export default function DevCard() {
                 Click here
               </a>
             </u>{' '}
+            <br />
+            Email: diji.solanke@yahoo.com
             <br />
             <br />
             <h4>More</h4>I worked on a government Project just before Christmas, the content of which have to remain
