@@ -10,7 +10,7 @@ export default function Dev() {
       <div style={position}>
         <Typography variant="inherit" align="center">
           <h1>
-            <em>My Tech Stack</em>
+            <em>Technologies I've used</em>
           </h1>
         </Typography>
         <TechStack />
