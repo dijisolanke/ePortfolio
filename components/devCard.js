@@ -117,8 +117,8 @@ export default function DevCard() {
             Email: diji.solanke@yahoo.com
             <br />
             <br />
-            <h4>More</h4>I worked on a government Project just before Christmas, the content of which have to remain
-            classified. <br />
+            <h4>More</h4>I worked on a government Project just before Christmas (2021), the content of which have to
+            remain classified. <br />
             On that Project I was working with Drupal 9. Throughout that project, I learned a lot about Drupal and It's
             templating engine. <br />
             I learned how to use Twig. A templating mark-up language. <br />
