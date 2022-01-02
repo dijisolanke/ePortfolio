@@ -12,7 +12,7 @@ I built it using React and it took me two and a half weeks.
 ![](gitPics/image1.png)
 
 <h1>
-Softare stack:
+Software stack:
 </h1>
 
 - HTML
