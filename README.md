@@ -1,6 +1,6 @@
 # MY WEB PORTFOLIO
 
-<h4>Link to Website:</h4>  https://diji-portfolio-bonohfc52-dijisolanke.vercel.app/dev
+<h4>Link to Website:</h4>  https://diji-portfolio.vercel.app/dev
 
 <h1>Synopsis</h1>
 
